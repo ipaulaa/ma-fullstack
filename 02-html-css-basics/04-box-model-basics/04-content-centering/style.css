@@ -1,0 +1,29 @@
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  height: 100px;
+  background-color: #e25a49;
+  color: #fff;
+
+  text-align: center;
+  line-height: 100px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.message {
+  margin: 15px 0;
+  padding: 30px;
+  border-radius: 15px;
+  border-style: solid;
+
+  color: #e25a49;
+  background-color: antiquewhite;
+
+  text-align: center;
+}
