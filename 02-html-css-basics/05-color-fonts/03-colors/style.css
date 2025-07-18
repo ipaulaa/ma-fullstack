@@ -1,0 +1,67 @@
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+li {
+  width: fit-content;
+  padding: 10px;
+  margin-bottom: 20px;
+
+  border: 2px solid #000;
+  border-radius: 10px;
+
+  font-family: "JetBrains Mono", monospace;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.blue {
+  color: blue;
+}
+
+.alpha {
+  color: magenta;
+}
+
+.named-color {
+  background-color: bisque;
+}
+
+.rgb {
+  background-color: rgb(255 228 196);
+}
+
+.rgba {
+  /* rgba() is an alias for rgb() */
+  background-color: rgb(255 255 0 / 0.4); /* rgba(255 255 0 / 0.4) */
+}
+
+.hex-6 {
+  background-color: #ffe4c4;
+}
+
+.hexa-6 {
+  /* #RRGGBBAA - 'AA' sets the opacity (00 = 0%, FF = 100%) */
+  background-color: #ff14932a;
+}
+
+.hex-3 {
+  /* #RGB expands to #RRGGBB */
+  background-color: #afb; /* #aaffbb */
+}
+
+.hexa-3 {
+  background-color: #ff06; /* #ffff0066 #*/
+}

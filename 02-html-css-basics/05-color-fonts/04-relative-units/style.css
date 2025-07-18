@@ -1,0 +1,46 @@
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body {
+  margin: 20px;
+  text-align: center;
+}
+
+div {
+  max-width: 600px;
+  margin: 15px auto;
+  padding: 30px;
+  border-radius: 15px;
+
+  color: white;
+  background-color: rebeccapurple;
+  font-size: 1.5em;
+}
+
+h2 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+}
+
+.em-title {
+  font-size: 2em;
+}
+
+.em-text {
+  font-size: 1em;
+}
+
+.rem-title {
+  font-size: 2rem;
+}
+
+.rem-text {
+  font-size: 1rem;
+}
