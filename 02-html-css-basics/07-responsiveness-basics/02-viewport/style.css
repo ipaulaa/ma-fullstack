@@ -1,0 +1,9 @@
+.outer {
+  height: 100vh;
+  background-color: #ffd700;
+}
+
+.inner {
+  height: 50vh;
+  background-color: #0057b7;
+}

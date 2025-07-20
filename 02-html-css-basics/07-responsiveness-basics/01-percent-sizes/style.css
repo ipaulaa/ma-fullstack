@@ -1,0 +1,23 @@
+.container {
+  margin-bottom: 20px;
+}
+
+.outer {
+  height: 200px;
+  width: 400px;
+  background-color: #ffd700;
+}
+
+.inner {
+  background-color: #0057b7;
+}
+
+.inner-px {
+  height: 100px;
+  width: 200px;
+}
+
+.inner-percent {
+  width: 50%;
+  height: 50%;
+}
