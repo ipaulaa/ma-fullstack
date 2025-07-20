@@ -1,0 +1,36 @@
+html {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+header {
+  background-color: #222;
+}
+
+.nav {
+  padding: 20px;
+  text-align: center;
+}
+
+.nav__link {
+  padding: 0 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.footer {
+  color: #fff;
+  background-color: #222;
+
+  text-align: center;
+  line-height: 80px;
+}
