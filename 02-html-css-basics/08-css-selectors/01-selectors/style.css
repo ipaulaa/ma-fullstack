@@ -1,0 +1,50 @@
+* {
+  padding: 15px;
+  margin: 15px;
+  border: 2px solid #6272a4;
+}
+
+body {
+  color: #f8f8f2;
+  background-color: #282a36;
+}
+
+p {
+  font-family: monospace;
+}
+
+.some-class {
+  background-color: #ff79c6;
+}
+
+#some-id {
+  background-color: #f55;
+}
+
+[title] {
+  font-weight: bold;
+}
+
+[title="page"] {
+  text-decoration: underline 2px;
+}
+
+[title^="page"] {
+  border-top: 4px dotted #ff79c6;
+}
+
+[title$="page"] {
+  border-bottom: 4px dotted #ffb86c;
+}
+
+[title*="page"] {
+  border-radius: 25px;
+}
+
+[title~="page"] {
+  width: 80%;
+}
+
+[title|="page"] {
+  color: #50fa7b;
+}

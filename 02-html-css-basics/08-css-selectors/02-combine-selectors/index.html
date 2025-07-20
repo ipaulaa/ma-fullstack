@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="ma.png" />
+    <title>Combine Selectors</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="box">.box</div>
+    <section class="container box">Container 1</section>
+    <section class="container">
+      Container 2
+      <div class="box">.box Child 1</div>
+      <div>Not a box</div>
+      <div class="box">
+        .box Child 2
+        <div class="box">.box Grandchild 1</div>
+        <div>Not a box</div>
+        <div class="box">.box Grandchild 2</div>
+      </div>
+    </section>
+
+    <div class="box">.box Next Sibling</div>
+    <div class="box">.box Following Sibling</div>
+  </body>
+</html>
