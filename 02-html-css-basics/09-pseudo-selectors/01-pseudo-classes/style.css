@@ -1,0 +1,52 @@
+h2 {
+  padding: 10px;
+  background-color: cyan;
+}
+
+div {
+  margin: 10px 0;
+}
+
+.container * {
+  width: fit-content;
+  padding: 10px 20px;
+  border: 2px solid #6272a4;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.container-1 :first-child {
+  border-style: dashed;
+}
+
+.container-1 p:last-child {
+  color: magenta;
+}
+
+.container-1 p:nth-child(odd) {
+  border-color: magenta;
+}
+
+.container-1 div:nth-last-child(-n + 3) {
+  background-color: palegreen;
+}
+
+.container-2 :first-of-type {
+  border-style: dashed;
+}
+
+.container-2 div:last-of-type {
+  color: magenta;
+}
+
+.container-2 p:nth-of-type(odd) {
+  border-color: magenta;
+}
+
+.container-2 div:nth-last-of-type(-n + 3) {
+  background-color: palegreen;
+}
+
+.container-3 p:hover {
+  background-color: yellow;
+}

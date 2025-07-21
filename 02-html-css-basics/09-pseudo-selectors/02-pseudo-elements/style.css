@@ -1,0 +1,33 @@
+h1::first-letter {
+  color: #f55;
+}
+
+.text-1::first-line {
+  text-decoration: line-through 2px #f55;
+}
+
+.text-1::selection {
+  color: #f1fa8c;
+  background-color: #282a36;
+}
+
+.text-2::before {
+  content: "::before";
+}
+
+.text-2::after {
+  content: "::after";
+}
+
+.text-2::before,
+.text-2::after {
+  display: block;
+  padding: 5px 0;
+
+  color: #50fa7b;
+  background-color: #6272a4;
+
+  font-family: monospace;
+  font-weight: bold;
+  text-align: center;
+}
