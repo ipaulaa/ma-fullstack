@@ -1,0 +1,30 @@
+body :not(h1) {
+  color: red;
+}
+
+p {
+  padding: 10px 20px;
+  border: 3px solid black;
+  border-radius: 25px;
+}
+
+p:hover {
+  border-style: dashed;
+}
+
+p:first-child {
+  border-style: dotted;
+}
+
+p.message {
+  color: #fff;
+  background-color: limegreen;
+}
+
+p:first-child {
+  background-color: magenta;
+}
+
+p[id="notification"] {
+  background-color: darkcyan;
+}

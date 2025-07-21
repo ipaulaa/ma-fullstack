@@ -1,0 +1,35 @@
+* {
+  color: white;
+}
+
+body {
+  background-color: plum;
+}
+
+#notification {
+  border-color: white;
+}
+
+.message {
+  border-color: deeppink;
+  background-color: rebeccapurple;
+}
+
+.message--error {
+  background-color: crimson;
+}
+
+p {
+  padding: 10px 20px;
+  border: 3px solid black;
+  border-radius: 25px;
+
+  background: forestgreen;
+}
+
+. {
+}
+
+li:first-child {
+  color: crimson;
+}
