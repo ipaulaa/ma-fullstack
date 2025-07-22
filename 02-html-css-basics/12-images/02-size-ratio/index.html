@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="ma.png" />
+    <title>Size & Ratio</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Mate academy</h1>
+    <section>
+      <h2>img</h2>
+      <img src="princess.jpeg" alt="Princess Avatar" />
+      <img class="w200" src="princess.jpeg" alt="Princess Avatar" />
+      <img class="w200 h100" src="princess.jpeg" alt="Princess Avatar" />
+      <img
+        class="w200 h100 ratio-fill"
+        src="princess.jpeg"
+        alt="Princess Avatar" />
+      <img
+        class="w200 h100 ratio-contain"
+        src="princess.jpeg"
+        alt="Princess Avatar" />
+      <img
+        class="w200 h100 ratio-cover"
+        src="princess.jpeg"
+        alt="Princess Avatar" />
+      <img
+        class="w200 h100 ratio-cover position-img"
+        src="princess.jpeg"
+        alt="Princess Avatar" />
+      <img class="w200 ratio-none" src="princess.jpeg" alt="Princess Avatar" />
+    </section>
+
+    <section>
+      <h2>background-image</h2>
+      <div class="bg-img h400"></div>
+      <div class="bg-img h400 no-repeat"></div>
+      <div class="bg-img h200 no-repeat"></div>
+      <div class="bg-img h200 no-repeat contain"></div>
+      <div class="bg-img h200 no-repeat contain position-bg"></div>
+      <div class="bg-img h200 no-repeat cover"></div>
+      <div class="bg-img h200 no-repeat cover position-bg"></div>
+    </section>
+  </body>
+</html>

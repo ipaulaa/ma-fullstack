@@ -1,0 +1,65 @@
+img {
+  display: block;
+}
+
+img,
+div {
+  margin-bottom: 20px;
+}
+
+.w200 {
+  width: 200px;
+}
+
+.h400 {
+  height: 400px;
+}
+
+.h200 {
+  height: 200px;
+}
+
+.h100 {
+  height: 100px;
+}
+
+.ratio-fill {
+  object-fit: fill;
+}
+
+.ratio-contain {
+  object-fit: contain;
+}
+
+.ratio-cover {
+  object-fit: cover;
+}
+
+.ratio-none {
+  object-fit: none;
+}
+
+.position-img {
+  object-position: top;
+}
+
+.bg-img {
+  background-color: mistyrose;
+  background-image: url("princess.jpeg");
+}
+
+.no-repeat {
+  background-repeat: no-repeat;
+}
+
+.contain {
+  background-size: contain;
+}
+
+.cover {
+  background-size: cover;
+}
+
+.position-bg {
+  background-position: center;
+}
