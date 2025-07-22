@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+div {
+  height: 300px;
+  margin: 30px;
+  padding: 60px;
+  border: 10px dotted rebeccapurple;
+  background-color: plum;
+
+  color: rebeccapurple;
+  font-family: monospace;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.content-box {
+  box-sizing: content-box;
+}
+
+.border-box {
+  box-sizing: border-box;
+}
