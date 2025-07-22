@@ -1,0 +1,19 @@
+.picture {
+  padding-bottom: 25%;
+  background-image: url("https://placehold.co/300x150/9683ec/fff");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 576px) {
+  .picture {
+    background-image: url("https://placehold.co/450x225/9683ec/fff");
+  }
+}
+
+@media (min-width: 768px) {
+  .picture {
+    background-image: url("https://placehold.co/1200x600/9683ec/fff");
+  }
+}

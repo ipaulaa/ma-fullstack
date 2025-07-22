@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/ma.png" />
+    <title>Responsive Images</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>Mate academy</h1>
+    <picture>
+      <source
+        media="(max-width: 600px)"
+        srcset="https://placehold.co/300x150/9683ec/fff" />
+      <source
+        media="(max-width: 900px)"
+        srcset="https://placehold.co/450x225/9683ec/fff" />
+      <img
+        class="picture"
+        src="https://placehold.co/1200x600/9683ec/fff"
+        alt="Placeholder" />
+    </picture>
+
+    <picture>
+      <source
+        media="(min-width: 900px)"
+        srcset="https://placehold.co/1200x600/9683ec/fff" />
+      <source
+        media="(min-width: 600px)"
+        srcset="https://placehold.co/450x225/9683ec/fff" />
+      <img
+        class="picture"
+        src="https://placehold.co/300x150/9683ec/fff"
+        alt="Placeholder" />
+    </picture>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+body {
+  background-color: plum;
+}
+
+@media (min-width: 1024px) or (orientation: portrait) {
+  body {
+    background-color: lightgreen;
+  }
+}
