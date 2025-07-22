@@ -9,15 +9,16 @@ h1 {
 }
 
 div {
+  width: 300px;
   height: 300px;
   margin: 30px;
-  padding: 60px;
+  padding: 30px;
   border: 10px dotted rebeccapurple;
   background-color: plum;
 
   color: rebeccapurple;
   font-family: monospace;
-  font-size: 36px;
+  font-size: 20px;
   font-weight: bold;
 }
 
