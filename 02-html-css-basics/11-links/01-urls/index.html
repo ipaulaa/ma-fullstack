@@ -15,20 +15,22 @@
 
     <h2>href paths</h2>
     <h3>
-      Current URL: <code>https://example.com/products/books/view.html</code>
+      Current URL:
+      <code>https://example.com/products/books/view.html</code>
     </h3>
     <ul>
       <li>
         <strong>Absolute URL</strong>
         <ul>
           <li>
-            <span class="underline">href:</span> <code>https://google.com</code>
+            <span class="underline">href:</span>
+            <code>https://google.com</code>
           </li>
           <li>
             <span class="underline">Goes to:</span>
-            <code>https://google.com</code><br /><em
-              >An external website, full URL</em
-            >
+            <code>https://google.com</code>
+            <br />
+            <em>An external website, full URL</em>
           </li>
         </ul>
       </li>
@@ -42,9 +44,9 @@
           </li>
           <li>
             <span class="underline">Goes to:</span>
-            <code>https://cdn.example.com/lib.js</code><br /><em
-              >Uses the current page's protocol</em
-            >
+            <code>https://cdn.example.com/lib.js</code>
+            <br />
+            <em>Uses the current page's protocol</em>
           </li>
         </ul>
       </li>
@@ -52,12 +54,15 @@
       <li>
         <strong>Root-relative path</strong>
         <ul>
-          <li><span class="underline">href:</span> <code>/about.html</code></li>
+          <li>
+            <span class="underline">href:</span>
+            <code>/about.html</code>
+          </li>
           <li>
             <span class="underline">Goes to:</span>
-            <code>https://example.com/about.html</code><br /><em
-              >Starts from the root of the site</em
-            >
+            <code>https://example.com/about.html</code>
+            <br />
+            <em>Starts from the root of the site</em>
           </li>
         </ul>
       </li>
@@ -66,12 +71,14 @@
         <strong>Relative path (same folder)</strong>
         <ul>
           <li>
-            <span class="underline">href:</span> <code>details.html</code>
+            <span class="underline">href:</span>
+            <code>details.html</code>
           </li>
           <li>
             <span class="underline">Goes to:</span>
-            <code>https://example.com/products/books/details.html</code
-            ><br /><em>File in the same directory as the current page</em>
+            <code>https://example.com/products/books/details.html</code>
+            <br />
+            <em>File in the same directory as the current page</em>
           </li>
         </ul>
       </li>
@@ -79,12 +86,15 @@
       <li>
         <strong>Relative path (current directory)</strong>
         <ul>
-          <li><span class="underline">href:</span> <code>./info.html</code></li>
+          <li>
+            <span class="underline">href:</span>
+            <code>./info.html</code>
+          </li>
           <li>
             <span class="underline">Goes to:</span>
-            <code>https://example.com/products/books/info.html</code><br /><em
-              >Same as above — current folder</em
-            >
+            <code>https://example.com/products/books/info.html</code>
+            <br />
+            <em>Same as above — current folder</em>
           </li>
         </ul>
       </li>
@@ -93,13 +103,14 @@
         <strong>Relative path (one folder up)</strong>
         <ul>
           <li>
-            <span class="underline">href:</span> <code>../index.html</code>
+            <span class="underline">href:</span>
+            <code>../index.html</code>
           </li>
           <li>
             <span class="underline">Goes to:</span>
-            <code>https://example.com/products/index.html</code><br /><em
-              >Moves up one directory</em
-            >
+            <code>https://example.com/products/index.html</code>
+            <br />
+            <em>Moves up one directory</em>
           </li>
         </ul>
       </li>
@@ -108,13 +119,14 @@
         <strong>Relative path (two folders up)</strong>
         <ul>
           <li>
-            <span class="underline">href:</span> <code>../../contact.html</code>
+            <span class="underline">href:</span>
+            <code>../../contact.html</code>
           </li>
           <li>
             <span class="underline">Goes to:</span>
-            <code>https://example.com/contact.html</code><br /><em
-              >Moves up two directories to root</em
-            >
+            <code>https://example.com/contact.html</code>
+            <br />
+            <em>Moves up two directories to root</em>
           </li>
         </ul>
       </li>
@@ -128,9 +140,11 @@
           </li>
           <li>
             <span class="underline">Goes to:</span>
-            <code
-              >https://example.com/products/books/view.html?sort=price&amp;category=books</code
-            ><br /><em>Adds parameters to the current page</em>
+            <code>
+              https://example.com/products/books/view.html?sort=price&amp;category=books
+            </code>
+            <br />
+            <em>Adds parameters to the current page</em>
           </li>
         </ul>
       </li>
@@ -138,10 +152,16 @@
       <li>
         <strong>Anchor link (fragment identifier)</strong>
         <ul>
-          <li><span class="underline">href:</span> <code>#reviews</code></li>
           <li>
-            <span class="underline">Goes to:</span> Scrolls to element with
-            <code>id="reviews"</code><br /><em>Stays on the same page</em>
+            <span class="underline">href:</span>
+            <code>#reviews</code>
+          </li>
+          <li>
+            <span class="underline">Goes to:</span>
+            Scrolls to element with
+            <code>id="reviews"</code>
+            <br />
+            <em>Stays on the same page</em>
           </li>
         </ul>
       </li>
