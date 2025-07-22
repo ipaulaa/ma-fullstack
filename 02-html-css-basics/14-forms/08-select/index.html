@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/ma.png" />
+    <title>Select</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>Mate academy</h1>
+    <form action="">
+      <div class="form-field">
+        <label for="birth-weekday">Birth weekday:</label>
+        <select name="birth-weekday" id="birth-weekday" required>
+          <option value="" selected disabled>
+            Select the day you were born
+          </option>
+          <option value="sun">Sunday</option>
+          <option value="mon">Monday</option>
+          <option value="tue">Tuesday</option>
+          <option value="wed">Wednesday</option>
+          <option value="thu">Thursday</option>
+          <option value="fri">Friday</option>
+          <option value="sat">Saturday</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label for="drink">What drinks do you like?</label>
+        <select name="drink" id="drink" multiple>
+          <option value="coffee">Coffee</option>
+          <option value="juice">Juice</option>
+          <option value="milk">Milk</option>
+          <option value="soda">Soda</option>
+          <option value="tea">Tea</option>
+          <option value="water">Water</option>
+        </select>
+      </div>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="images/ma.png" rel="icon" />
+    <title>Form Fields & Validation</title>
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Mate academy</h1>
+    <form action="">
+      <div class="form-field">
+        Username:<br />
+        <input type="text" name="username" pattern="\w+" />
+      </div>
+      <div class="form-field">
+        Email:<br />
+        <input type="email" name="email" />
+      </div>
+      <div class="form-field">
+        Password:<br />
+        <input
+          type="password"
+          name="password"
+          minlength="8"
+          maxlength="20"
+          required />
+      </div>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>

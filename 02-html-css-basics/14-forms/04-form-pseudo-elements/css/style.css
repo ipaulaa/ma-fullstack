@@ -1,0 +1,39 @@
+.form-field {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+}
+
+input::placeholder {
+  color: deeppink;
+}
+
+:focus {
+  background-color: lightgreen;
+}
+
+input:valid {
+  border-left: 10px solid limegreen;
+}
+
+input:invalid {
+  border-left: 10px solid #f55;
+}
+
+label:has(input:checked) {
+  color: limegreen;
+}
+
+button:hover {
+  color: magenta;
+}
+
+button:active {
+  color: cyan;
+}
+
+button:disabled {
+  color: #f55;
+}

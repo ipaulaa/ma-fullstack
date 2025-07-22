@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/ma.png" />
+    <title>Contenteditable</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>Mate academy</h1>
+    <h2>Content to copy</h2>
+    <p>
+      Copy all the text in the block below and paste it into each of the
+      contenteditable blocks to compare the results.
+    </p>
+    <div class="copying">
+      <p>
+        This is a paragraph containing <strong>Bold</strong>, <em>Italic</em>,
+        and <span class="red">red</span> text, followed by an ordered list:
+      </p>
+      <ol>
+        <li>Step one</li>
+        <li>Step two</li>
+        <li>Step three</li>
+      </ol>
+    </div>
+
+    <h2>Pasting areas</h2>
+    <div>
+      <h3>contenteditable="true"</h3>
+      <div class="pasting" contenteditable="true"></div>
+
+      <h3>contenteditable="plaintext-only"</h3>
+      <div class="pasting" contenteditable="plaintext-only"></div>
+    </div>
+  </body>
+</html>
