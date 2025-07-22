@@ -1,0 +1,19 @@
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 90vh;
+}
+
+body :target {
+  border: 2px dashed #000;
+}
+
+section:nth-of-type(odd) {
+  background-color: mistyrose;
+}
+
+section:nth-of-type(even) {
+  background-color: lemonchiffon;
+}
