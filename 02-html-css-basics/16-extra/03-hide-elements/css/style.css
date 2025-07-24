@@ -1,0 +1,56 @@
+div {
+  border: 1px solid black;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+h2 {
+  font-family: monospace;
+}
+
+.link {
+  display: block;
+  margin: 8px 0;
+  padding: 8px 16px;
+  border-radius: 8px;
+
+  color: #fff;
+  background-color: #ff79c6;
+
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.link:hover {
+  background-color: #bd93f9;
+}
+
+.link-2 {
+  display: none;
+}
+
+.link-3 {
+  visibility: hidden;
+}
+
+.link-4 {
+  opacity: 0;
+}
+
+.link-5 {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  height: 1px !important;
+  width: 1px !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  white-space: nowrap !important;
+}
