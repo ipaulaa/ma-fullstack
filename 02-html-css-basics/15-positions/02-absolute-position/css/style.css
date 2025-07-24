@@ -1,0 +1,35 @@
+h1 {
+  margin: 0;
+  padding-bottom: 100px;
+  background-color: mistyrose;
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  margin: 10px auto;
+  border: 5px solid black;
+}
+
+.box {
+  width: 70%;
+  height: 200px;
+  position: absolute;
+  opacity: 0.8;
+}
+
+.purple {
+  background-color: #bd93f9;
+  top: 50px;
+  left: 50px;
+}
+
+.container-relative {
+  position: relative;
+}
+
+.orange {
+  background-color: #ffb86c;
+  bottom: 20px;
+  right: 20px;
+}
