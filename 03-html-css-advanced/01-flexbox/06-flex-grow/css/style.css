@@ -1,0 +1,39 @@
+h2 {
+  font-family: monospace;
+}
+
+.container {
+  height: 500px;
+  margin: 10px 0;
+  border: 3px solid crimson;
+
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+}
+
+.box-1 {
+  flex-grow: 1;
+  flex-basis: 50px;
+  background-color: mediumpurple;
+}
+
+.box-2 {
+  flex-grow: 2;
+  flex-basis: 100px;
+  background-color: teal;
+}
+
+.container:first-of-type .box-2 {
+  max-width: 600px;
+}
