@@ -1,0 +1,62 @@
+$cell-size: 100px;
+$player-size: 0.8 * $cell-size;
+$shift: 0.1 * $cell-size;
+$cols-count: 3;
+$rows-count: 3;
+
+.game {
+  width: $cols-count * $cell-size;
+  border: 2px solid #000;
+  position: relative;
+
+  &__field {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__cell {
+    box-sizing: border-box;
+
+    width: $cell-size;
+    height: $cell-size;
+    border: 1px dashed #000;
+  }
+
+  &__player {
+    width: $player-size;
+    height: $player-size;
+    border-radius: 50%;
+    background-color: #000;
+
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    $colors:
+      red #f55,
+      green #5f5,
+      blue #55f;
+
+    @each $name, $color in $colors {
+      &--color--#{$name} {
+        background-color: $color;
+      }
+    }
+
+    @function currentShift($position, $size, $base-shift) {
+      @return ($position - 1) * $size + $base-shift;
+    }
+
+    @for $col from 1 through $cols-count {
+      &--x--#{$col} {
+        left: currentShift($col, $cell-size, $shift);
+      }
+    }
+
+    @for $row from 1 through $rows-count {
+      &--y--#{$row} {
+        top: currentShift($row, $cell-size, $shift);
+      }
+    }
+  }
+}

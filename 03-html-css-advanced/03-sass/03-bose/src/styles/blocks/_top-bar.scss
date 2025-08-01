@@ -1,0 +1,30 @@
+@use "../utils/mixins";
+
+.top-bar {
+  padding-block: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & {
+    @include mixins.contentPaddingInline;
+
+    @include mixins.onTablet {
+      padding-block: 32px;
+    }
+  }
+
+  &__logo {
+    height: 16px;
+    display: flex;
+
+    @include mixins.onTablet {
+      height: 24px;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    gap: 24px;
+  }
+}

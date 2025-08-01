@@ -1,0 +1,61 @@
+@use "../utils/mixins";
+
+.header {
+  height: 100vh;
+  box-sizing: border-box;
+
+  background-image: url("../images/header-bg-mobile.png");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  & {
+    @include mixins.onTablet {
+      background-image: url("../images/header-bg-tablet.png");
+    }
+  }
+
+  &__link {
+    line-height: 0;
+  }
+
+  &__bottom {
+    padding-bottom: 40px;
+    @include mixins.contentPaddingInline;
+
+    @include mixins.onTablet {
+      padding-bottom: 64px;
+    }
+  }
+
+  &__waves {
+    width: 48px;
+    height: 58px;
+    margin-bottom: 16px;
+    background-image: url(../images/sound-waves.svg);
+    background-size: cover;
+
+    @include mixins.onTablet {
+      width: 63px;
+      height: 76px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+
+    font-size: 2rem;
+    line-height: 100%;
+    font-style: italic;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+
+    @include mixins.onTablet {
+      font-size: 2.5rem;
+    }
+  }
+}

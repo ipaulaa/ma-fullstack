@@ -1,0 +1,69 @@
+.game {
+  --cell-size: 100px;
+  --player-size: calc(0.8 * var(--cell-size));
+  --shift: calc(0.1 * var(--cell-size));
+  width: calc(3 * var(--cell-size));
+  border: 2px solid #000;
+  position: relative;
+  height: var(s);
+}
+
+.game__field {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.game__cell {
+  box-sizing: border-box;
+
+  width: var(--cell-size);
+  height: var(--cell-size);
+  border: 1px dashed #000;
+}
+
+.game__player {
+  width: var(--player-size);
+  height: var(--player-size);
+  border-radius: 50%;
+  background-color: #000;
+
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.game__player--color--red {
+  background-color: red;
+}
+
+.game__player--color--green {
+  background-color: green;
+}
+
+.game__player--color--blue {
+  background-color: blue;
+}
+
+.game__player--x--1 {
+  left: var(--shift);
+}
+
+.game__player--x--2 {
+  left: calc(var(--cell-size) + var(--shift));
+}
+
+.game__player--x--3 {
+  left: calc(2 * var(--cell-size) + var(--shift));
+}
+
+.game__player--y--1 {
+  top: var(--shift);
+}
+
+.game__player--y--2 {
+  top: calc(var(--cell-size) + var(--shift));
+}
+
+.game__player--y--3 {
+  top: calc(2 * var(--cell-size) + var(--shift));
+}
