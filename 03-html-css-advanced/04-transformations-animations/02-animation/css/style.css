@@ -1,0 +1,83 @@
+.container {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.box-base {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: monospace;
+  font-size: 1.5rem;
+  text-align: center;
+
+  color: white;
+  background-color: rebeccapurple;
+}
+
+.box {
+  position: relative;
+}
+
+.box-1 {
+  animation-name: move;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: 7;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+
+.box-2 {
+  animation: move 1s ease-in-out 0s 7 alternate both;
+}
+
+.box-3 {
+  animation: move 1s ease-in-out 0s 8 alternate both;
+}
+
+.box-4 {
+  animation: move 1s ease-in-out 0s infinite alternate both;
+}
+
+.box-5 {
+  animation:
+    move 1s ease-in-out 0s infinite alternate both,
+    round 500ms linear 0s infinite alternate both;
+}
+
+.box-5:hover {
+  animation-play-state: paused;
+}
+
+@keyframes move {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: calc(100% - 150px);
+  }
+}
+
+@keyframes round {
+  0% {
+    border-radius: 0;
+  }
+
+  50% {
+    border-radius: 25%;
+  }
+
+  100% {
+    border-radius: 50%;
+  }
+}

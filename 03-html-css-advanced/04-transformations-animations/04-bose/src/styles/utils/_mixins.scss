@@ -1,0 +1,23 @@
+@use "variables";
+
+@mixin onTablet {
+  @media (min-width: variables.$tablet-min-width) {
+    @content;
+  }
+}
+
+@mixin contentPaddingInline {
+  padding-inline: 20px;
+
+  @include onTablet {
+    padding-inline: 72px;
+  }
+}
+
+@mixin hover($prop, $propValue) {
+  transition: #{$prop} 0.3s;
+
+  &:hover {
+    #{$prop}: #{$propValue};
+  }
+}

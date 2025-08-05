@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  gap: 8px;
+}
+
+.box-base {
+  flex-grow: 1;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: monospace;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.box {
+  height: 80px;
+  background-color: hotpink;
+}
+
+.box:hover {
+  height: 800px;
+  background-color: deeppink;
+}
+
+.box-1,
+.box-3 {
+  transition:
+    background-color 500ms ease-in-out 500ms,
+    height 1s steps(6, end);
+}
+
+.box-2 {
+  transition-delay: 500ms, 0s;
+  transition-duration: 500ms, 1s;
+  transition-property: background-color, height;
+  transition-timing-function: ease-in-out, steps(4, end);
+}
+
+.box-3:hover {
+  transition-duration: 1s, 2s;
+}
