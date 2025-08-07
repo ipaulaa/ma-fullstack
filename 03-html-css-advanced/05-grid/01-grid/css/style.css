@@ -1,0 +1,48 @@
+.container {
+  height: 100vh;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr 3fr 100px;
+  grid-template-columns: 175px 2fr 200px;
+}
+
+.box {
+  padding: 24px;
+
+  color: #fff;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.header {
+  grid-row: 1 / 2;
+  grid-column: 1 / -1;
+  background-color: rebeccapurple;
+}
+
+.sidebar {
+  grid-row: 2 / -2;
+  grid-column: 1 / 2;
+  background-color: teal;
+}
+
+.ads {
+  grid-column: 2 / -1;
+  background-color: firebrick;
+}
+
+.main {
+  grid-column: 2 / 3;
+  background-color: navy;
+}
+
+.news {
+  background-color: forestgreen;
+}
+
+.footer {
+  grid-row: -2 / -1;
+  grid-column: 1 / -1;
+  background-color: mediumvioletred;
+}

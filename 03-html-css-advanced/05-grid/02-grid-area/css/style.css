@@ -1,0 +1,51 @@
+.container {
+  height: 100vh;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr 3fr 100px;
+  grid-template-columns: 175px 2fr 200px;
+  grid-template-areas:
+    "header header header"
+    "sidebar ads ads"
+    "sidebar main news"
+    "footer footer footer";
+}
+
+.box {
+  padding: 24px;
+
+  color: #fff;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.header {
+  grid-area: header;
+  background-color: rebeccapurple;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: teal;
+}
+
+.ads {
+  grid-area: ads;
+  background-color: firebrick;
+}
+
+.main {
+  grid-area: main;
+  background-color: navy;
+}
+
+.news {
+  grid-area: news;
+  background-color: forestgreen;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: mediumvioletred;
+}
