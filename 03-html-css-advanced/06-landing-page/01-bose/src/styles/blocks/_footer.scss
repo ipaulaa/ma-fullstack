@@ -1,0 +1,18 @@
+@use "../utils/mixins";
+
+.footer {
+  margin-bottom: 0;
+
+  &__banner {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+
+    @include mixins.onTablet {
+      height: 400px;
+    }
+    @include mixins.onDesktop {
+      height: 460px;
+    }
+  }
+}

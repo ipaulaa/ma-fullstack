@@ -1,0 +1,21 @@
+@use "variables";
+
+@mixin onTablet {
+  @media (min-width: variables.$tablet-min-width) {
+    @content;
+  }
+}
+
+@mixin onDesktop {
+  @media (min-width: variables.$desktop-min-width) {
+    @content;
+  }
+}
+
+@mixin hover($prop, $propValue) {
+  transition: #{$prop} 0.3s;
+
+  &:hover {
+    #{$prop}: #{$propValue};
+  }
+}

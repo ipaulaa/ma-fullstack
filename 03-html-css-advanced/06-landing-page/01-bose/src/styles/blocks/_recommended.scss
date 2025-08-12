@@ -1,0 +1,21 @@
+@use "../utils/mixins";
+@use "../utils/placeholders" as *;
+
+.recommended {
+  &__products {
+    @extend %page-grid;
+    row-gap: 40px;
+  }
+
+  &__product {
+    grid-column: span var(--columns);
+
+    @include mixins.onTablet {
+      grid-column: 2 / span 4;
+    }
+
+    @include mixins.onDesktop {
+      grid-column-start: revert;
+    }
+  }
+}

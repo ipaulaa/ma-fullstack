@@ -1,0 +1,49 @@
+@use "../utils/mixins";
+@use "../utils/placeholders" as *;
+
+.how-to-buy {
+  @extend %page-grid;
+
+  &__title {
+    grid-column: 1 / -1;
+
+    @include mixins.onTablet {
+      grid-column: span 3;
+    }
+
+    @include mixins.onDesktop {
+      grid-column: span 5;
+    }
+  }
+
+  &__content {
+    grid-column: span var(--columns);
+
+    @include mixins.onTablet {
+      grid-column: span 3;
+    }
+
+    @include mixins.onDesktop {
+      grid-column: span 5;
+    }
+  }
+
+  &__benefits {
+    padding: 0;
+    margin: 0 0 40px;
+    list-style: none;
+
+    display: grid;
+    row-gap: 16px;
+
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 700;
+  }
+
+  &__description {
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 400;
+  }
+}

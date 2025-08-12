@@ -1,0 +1,64 @@
+@use "../utils/mixins";
+@use "../utils/placeholders" as *;
+
+.categories {
+  &__wrapper {
+    display: grid;
+    row-gap: 40px;
+
+    @include mixins.onTablet {
+      row-gap: 64px;
+    }
+  }
+}
+
+.category {
+  &__photos {
+    @extend %page-grid;
+    margin-bottom: 16px;
+  }
+
+  &__link {
+    position: relative;
+
+    &--wide {
+      @include mixins.onTablet {
+        grid-column: span 4;
+      }
+
+      @include mixins.onDesktop {
+        grid-column: span 8;
+      }
+    }
+
+    &--square {
+      height: 0;
+      padding-bottom: 100%;
+      @include mixins.onTablet {
+        grid-column: span 2;
+      }
+
+      @include mixins.onDesktop {
+        grid-column: span 4;
+      }
+    }
+  }
+
+  &__photo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 700;
+
+    @include mixins.onDesktop {
+      font-size: 24px;
+    }
+  }
+}

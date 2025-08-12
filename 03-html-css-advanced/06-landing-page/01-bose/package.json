@@ -1,0 +1,17 @@
+{
+  "name": "bose",
+  "version": "1.0.0",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel --open",
+    "clean": "rm -rf dist .parcel-cache",
+    "prebuild": "npm run clean",
+    "build": "parcel build --public-url ."
+  },
+  "author": "Paula Rodrigues",
+  "description": "Bose Landing Page",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.15.4",
+    "parcel": "^2.15.4"
+  }
+}
